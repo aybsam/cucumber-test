@@ -1,0 +1,186 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "line": 17,
+        "name": "Modification de l\u0027adresse d\u0027un abonné résidant en France sans ou avec date d\u0027effet",
+        "description": "",
+        "id": "modifier-l-adresse-d-un-abonné;modification-de-l-adresse-d-un-abonné-résidant-en-france-sans-ou-avec-date-d-effet;;2",
+        "type": "scenario",
+        "keyword": "Plan du scénario",
+        "steps": [
+          {
+            "result": {
+              "duration": 354666549,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "un abonné avec une adresse principale \"\u003cactive\u003e\" en France",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003cactive\u003e",
+                  "offset": 39
+                }
+              ],
+              "location": "adresseModification.unAbonneAvecUneAdressePrincipaleEnFrance(String)"
+            },
+            "keyword": "Etant donné "
+          },
+          {
+            "result": {
+              "duration": 1298100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "le conseiller connecté à \"FACE\" modifie l\u0027adresse de l\u0027abonné",
+            "match": {
+              "arguments": [
+                {
+                  "val": "FACE",
+                  "offset": 26
+                }
+              ],
+              "location": "adresseModification.leChargeClienteleConnecteModifieLAdresseDeLAbonne(String)"
+            },
+            "keyword": "Lorsque "
+          },
+          {
+            "result": {
+              "duration": 3580228,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "l\u0027adresse de l\u0027abonné modifiée est enregistrée sur l\u0027ensemble des contrats de l\u0027abonné",
+            "match": {
+              "location": "adresseModification.lAdresseDeLAbonneModifieeEstEnregistreeSurLEnsembleDesContratsDeLAbonne()"
+            },
+            "keyword": "Alors "
+          },
+          {
+            "result": {
+              "duration": 634034,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "un mouvement de modification d\u0027adresse est créé",
+            "match": {
+              "location": "adresseModification.unMouvementDeModificationDAdresseEstCree()"
+            },
+            "keyword": "Et "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@adresse"
+          },
+          {
+            "name": "@modification"
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Modification de l\u0027adresse d\u0027un abonné résidant en France sans ou avec date d\u0027effet",
+        "description": "",
+        "id": "modifier-l-adresse-d-un-abonné;modification-de-l-adresse-d-un-abonné-résidant-en-france-sans-ou-avec-date-d-effet;;3",
+        "type": "scenario",
+        "keyword": "Plan du scénario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13832123,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "un abonné avec une adresse principale \"\u003cactive\u003e\" en France",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003cactive\u003e",
+                  "offset": 39
+                }
+              ],
+              "location": "adresseModification.unAbonneAvecUneAdressePrincipaleEnFrance(String)"
+            },
+            "keyword": "Etant donné "
+          },
+          {
+            "result": {
+              "duration": 720847,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "le conseiller connecté à \"EC\" modifie l\u0027adresse de l\u0027abonné",
+            "match": {
+              "arguments": [
+                {
+                  "val": "EC",
+                  "offset": 26
+                }
+              ],
+              "location": "adresseModification.leChargeClienteleConnecteModifieLAdresseDeLAbonne(String)"
+            },
+            "keyword": "Lorsque "
+          },
+          {
+            "result": {
+              "duration": 713647,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "l\u0027adresse de l\u0027abonné modifiée est enregistrée sur l\u0027ensemble des contrats de l\u0027abonné",
+            "match": {
+              "location": "adresseModification.lAdresseDeLAbonneModifieeEstEnregistreeSurLEnsembleDesContratsDeLAbonne()"
+            },
+            "keyword": "Alors "
+          },
+          {
+            "result": {
+              "duration": 4135305,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "un mouvement de modification d\u0027adresse est créé",
+            "match": {
+              "location": "adresseModification.unMouvementDeModificationDAdresseEstCree()"
+            },
+            "keyword": "Et "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@adresse"
+          },
+          {
+            "name": "@modification"
+          }
+        ]
+      }
+    ],
+    "name": "Modifier l\u0027adresse d\u0027un abonné",
+    "description": "",
+    "id": "modifier-l-adresse-d-un-abonné",
+    "keyword": "Fonctionnalité",
+    "uri": "src/test/resources/features/adresse.feature",
+    "tags": [
+      {
+        "name": "@adresse",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      },
+      {
+        "name": "@modification",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 10
+        }
+      }
+    ]
+  }
+]

@@ -31,7 +31,7 @@ public class adresseModification {
         abonne.setAdressePrincipaleEtat(etat);
     }
 
-    @When("le charge clientele connecté à \"([^\"]*)\" modifie l'adresse de l'abonné")
+    @When("le conseiller connecté à \\\"([^\\\"]*)\\\" modifie l'adresse de l'abonné")
     public void leChargeClienteleConnecteModifieLAdresseDeLAbonne(String canal) {
 
         modificationService.modificationAdresse(abonne, chargeClientele, canal, nouvelleAdresse,

@@ -1,6 +1,8 @@
 # cucumber-test
 
-language: fr @adresse @modification
+language: fr 
+
+@adresse @modification
 
 Fonctionnalité: Modifier l'adresse d'un abonné
 
